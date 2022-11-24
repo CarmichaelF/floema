@@ -7,7 +7,7 @@
     "frontend:build": "webpack --config webpack.config.build.cjs",
     "frontend:development": "webpack serve --progress --config webpack.config.development.cjs",
     "start": "concurrently --kill-others \"npm run backend:development\" \"npm run frontend:development\"",
-    "build": "concurrently --kill-others \"npm run backend:build\" \"npm run frontend:build\""
+    "build": "concurrently \"npm run backend:build\" \"npm run frontend:build\""
   },
   "author": "Carmichael Ferreira Pereira",
   "license": "ISC",
